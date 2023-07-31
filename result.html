@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c71a2b98b5.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="none,noarchive" />
+    <link rel="stylesheet" href="index.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+<meta name="robots" content="none,noarchive"/>
+  <title>Your Recommended Dog Breed</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img src="1.jpg" style="width: 60px; height: 45px;/></a>
+        
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-link active text-dark" href="index.html">
+                    About us
+                    <span class="sr-only">(current)</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+  <h3>Your Recommended Dog Breed</h3>
+  <div id="result" class="result"></div>
+  <div class="images">
+   <img src="01.jpeg" alt="" style="height: 24%;width: 24%;">
+   <img src="02.jpeg" alt="" style="height: 24%;width: 24%;">
+   <img src="03.jpeg" alt="" style="height: 24%;width: 24%;">
+   <img src="04.jpeg" alt="" style="height: 24%;width: 24%;">
+   <img src="05.jpeg" alt="" style="height: 24%;width: 24%;">
+   <img src="06.jpeg" alt="" style="height: 24%;width: 24%;">
+   <img src="07.jpeg" alt="" style="height: 24%;width: 24%;">
+   <img src="08.jpeg" alt="" style="height: 24%;width: 24%;">
+   <img src="09.jpeg" alt="" style="height: 24%;width: 24%;">
+   <img src="10.jpeg" alt="" style="height: 24%;width: 24%;">
+   <img src="11.jpeg" alt="" style="height: 24%;width: 24%;">
+   <img src="12.jpeg" alt="" style="height: 24%;width: 24%;">
+  </div>
+  <script>
+    // Extract the recommended breed from the query parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const breed = urlParams.get('breed');
+
+    // Display the recommended breed
+    const resultDiv = document.getElementById('result');
+    resultDiv.textContent = `Based on your answers, we recommend a ${breed} !`;
+    if(breed == 'Bulldog'){
+      document.getElementById('breed').innerHTML = "<img src='1.jpg' alt='yourimgtext'/>"
+    }
+  </script>
+</body>
+</html>
